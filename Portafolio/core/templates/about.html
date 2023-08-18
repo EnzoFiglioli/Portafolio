@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Cabecera -->
+    <header class="masthead" style="background-image: url('{% static "img/about-bg.jpg"%}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Acerca de</h1>
+              <span class="subheading">Biografía</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'img/avatar.png'%}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Enzo Figlioli</h2>   
+          <p>¡Hola! Soy Enzo Figlioli, un apasionado <b>desarrollador web Fullstack</b>. Originario de la ciudad de Bolívar, en la provincia de Buenos Aires, pero actualmente resido en Olavarría, también en la misma provincia. Estoy emocionado por embarcarme en mi primer empleo en el mundo de la tecnología y estoy buscando oportunidades para aplicar mis habilidades y conocimientos en el campo IT. Te invito a explorar algunos de los proyectos que he creado a lo largo de mi trayecto. ¡Espero que te gusten!</p>
+          
+        </div>
+      </div>  
+    </div>
+
+    <hr>
+{% endblock %}
+    <!-- Pié de página -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; 2023 · Arturo Grottoli </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuert y Bootstrap -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts del template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
